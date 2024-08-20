@@ -1,0 +1,160 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+nav {
+  background-color: #9a491e;
+  overflow: hidden;
+  height: 68px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .left a {
+  color: rgb(0, 255, 225);
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav .left a:hover {
+  background-color: #c39f9f;
+  border-radius: 4px;
+  color: rgb(255, 208, 0);
+}
+
+
+/* Form Container */
+.form-container {
+  background-image: url(./registration.jpg);
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  background-repeat: no-repeat;
+  filter: brightness(85%);
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 20px auto;
+}
+
+.form-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+  text-align: center;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(5, 176, 255);
+  text-shadow: 4px 4px 4px rgb(255, 128, 0);
+  display: block;
+  width: 100%;
+}
+
+.form-container input[type="email"],
+.form-container input[type="text"],
+.form-container input[type="tel"],
+.form-container input[type="password"],
+.form-container input[type="file"] {
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  nav .left a {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .form-container {
+    width: 95%;
+    margin: 90px auto 20px auto;
+    padding: 15px;
+  }
+
+  .form-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .form-container input[type="email"],
+  .form-container input[type="text"],
+  .form-container input[type="tel"],
+  .form-container input[type="password"],
+  .form-container input[type="file"] {
+    width: calc(100% - 15px);
+  }
+
+  .form-container button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 100%;
+    margin: 100px auto 20px auto;
+    padding: 10px;
+  }
+
+  .form-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-container input[type="email"],
+  .form-container input[type="text"],
+  .form-container input[type="tel"],
+  .form-container input[type="password"],
+  .form-container input[type="file"] {
+    width: calc(100% - 10px);
+  }
+
+  .form-container button {
+    padding: 6px;
+  }
+}
